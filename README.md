@@ -1,4 +1,6 @@
-# This is a GUI Application built with Tkinter and Tkmacosx for coloring.
+# GUI Application built with Tkinter and Tkmacosx for coloring.
+
+## The goal of this application is to automatically sync all of my assignments and tests in Canvas onto my G-Mail calendar
 
 ### If you'd like to modify this please fork the repo and download the requirements.txt file as well.
 
