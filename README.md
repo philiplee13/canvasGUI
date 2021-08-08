@@ -9,6 +9,5 @@ python3 -m venv venv **<- This will create a virtual enviroment named "venv"**
 #### Once you have the folder and files downloaded, please navigate to that folder where the canvasGUI.py file is held and run the following 
 **python3 canvasGUI.py**
 <br>
-<br> This should bring up the following
-![Image of CanvasGUI]
-(https://drive.google.com/uc?export=view&id=14of1iN4-ugV3tGc65r9M6B5l_7ItbzZx)
+<br> This should bring up the following <br>
+![Image of CanvasGUI](https://drive.google.com/uc?export=view&id=14of1iN4-ugV3tGc65r9M6B5l_7ItbzZx)
