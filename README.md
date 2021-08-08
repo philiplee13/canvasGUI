@@ -17,3 +17,8 @@ I haven't yet made this public, if you would like to use this please either open
 <br>
 <br> This should bring up the following <br>
 ![Image of CanvasGUI](https://drive.google.com/uc?export=view&id=14of1iN4-ugV3tGc65r9M6B5l_7ItbzZx)
+
+### Documentation and tutorials
+tkmacosx - https://github.com/Saadmairaj/tkmacosx#button-widget
+Google Calendar API - https://developers.google.com/calendar/api/guides/overview
+Tkinter tutorial - https://realpython.com/python-gui-tkinter/
