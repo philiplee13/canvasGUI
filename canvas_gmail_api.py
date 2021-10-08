@@ -10,12 +10,13 @@ from google.auth.transport.requests import Request
 
 class Canvas_Gmail_Script:
 
-    def __init__(self, gmail, api, term_start):
+    def __init__(self, gmail, api, term_start, school):
         self.gui_gmail = gmail
         self.gui_canvas_api = api
         self.headers = {'Authorization': f'Bearer {self.gui_canvas_api}'}
         self.term_start_date = term_start
-        self.url = "https://auburn.instructure.com/api/v1/courses"
+        self.school = school
+        self.url = f"https://{self.school}.instructure.com/api/v1/courses"
         # create variables to hold all courses and assignments
         self.course_dict = {}
         self.assignment_names = []
@@ -84,7 +85,7 @@ class Canvas_Gmail_Script:
 
 
     def get_calendar_service(self):
-        GOOGLE_CRED = "/Users/philiplee/Desktop/Personal Projects/canvasGUI/credentials.json"
+        GOOGLE_CRED = "/Users/philiplee/Desktop/Personal_Projects/canvasGUI/credentials.json"
         SCOPES = ["https://www.googleapis.com/auth/calendar"]
         creds = None
         if os.path.exists("token.pickle"):
@@ -110,7 +111,7 @@ class Canvas_Gmail_Script:
                 if course_id == int(key):
                     final_name = name + " " + value
                     start = datetime.datetime(int(due_date.split("-")[0]),int(due_date.split("-")[1]),int(due_date.split("-")[2])).isoformat()
-                    event_result = service.events().insert(calendarId="primary",body= {
+                    event_result = service.events().insert(calendarId="philipyjlee95@gmail.com",body= {
                         "summary": final_name,
                         "start": {"dateTime" : start, "timeZone" : "PST"},
                         "end" : {"dateTime" : start, "timeZone" : "PST"}
